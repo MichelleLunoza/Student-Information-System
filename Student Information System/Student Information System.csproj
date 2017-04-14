@@ -48,6 +48,11 @@
     <Compile Include="BLL\StudentBLL.cs" />
     <Compile Include="DAL\StudentDAL.cs" />
     <Compile Include="Student.cs" />
+    <Compile Include="StudentDbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StudentDbDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="StudentInfo.cs" />
     <Compile Include="UI\Istudent.cs" />
     <Compile Include="UI\MainForm.cs">
@@ -88,6 +93,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="StudentDbDataSet.xsc">
+      <DependentUpon>StudentDbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="StudentDbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StudentDbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StudentDbDataSet.xss">
+      <DependentUpon>StudentDbDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

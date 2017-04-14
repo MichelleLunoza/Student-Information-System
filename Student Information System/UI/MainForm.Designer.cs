@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.IDtextBox = new System.Windows.Forms.TextBox();
@@ -60,6 +61,26 @@
             this.Updatebutton = new System.Windows.Forms.Button();
             this.Deletebutton = new System.Windows.Forms.Button();
             this.Editbutton = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.studentDbDataSet = new Student_Information_System.StudentDbDataSet();
+            this.studentTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.student_TableTableAdapter = new Student_Information_System.StudentDbDataSetTableAdapters.Student_TableTableAdapter();
+            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lastnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.firstnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.middlenameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sexDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.addressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.collegeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.courseDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.yearLevelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sectionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.semesterDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.scholarshipDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentDbDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentTableBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label3
@@ -380,12 +401,146 @@
             this.Editbutton.Text = "Edit";
             this.Editbutton.UseVisualStyleBackColor = true;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.iDDataGridViewTextBoxColumn,
+            this.lastnameDataGridViewTextBoxColumn,
+            this.firstnameDataGridViewTextBoxColumn,
+            this.middlenameDataGridViewTextBoxColumn,
+            this.ageDataGridViewTextBoxColumn,
+            this.sexDataGridViewTextBoxColumn,
+            this.addressDataGridViewTextBoxColumn,
+            this.collegeDataGridViewTextBoxColumn,
+            this.courseDataGridViewTextBoxColumn,
+            this.yearLevelDataGridViewTextBoxColumn,
+            this.sectionDataGridViewTextBoxColumn,
+            this.semesterDataGridViewTextBoxColumn,
+            this.scholarshipDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.studentTableBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(44, 317);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.Size = new System.Drawing.Size(832, 204);
+            this.dataGridView1.TabIndex = 59;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // studentDbDataSet
+            // 
+            this.studentDbDataSet.DataSetName = "StudentDbDataSet";
+            this.studentDbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // studentTableBindingSource
+            // 
+            this.studentTableBindingSource.DataMember = "Student_Table";
+            this.studentTableBindingSource.DataSource = this.studentDbDataSet;
+            // 
+            // student_TableTableAdapter
+            // 
+            this.student_TableTableAdapter.ClearBeforeFill = true;
+            // 
+            // iDDataGridViewTextBoxColumn
+            // 
+            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
+            this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
+            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
+            this.iDDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // lastnameDataGridViewTextBoxColumn
+            // 
+            this.lastnameDataGridViewTextBoxColumn.DataPropertyName = "Lastname";
+            this.lastnameDataGridViewTextBoxColumn.HeaderText = "Lastname";
+            this.lastnameDataGridViewTextBoxColumn.Name = "lastnameDataGridViewTextBoxColumn";
+            this.lastnameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // firstnameDataGridViewTextBoxColumn
+            // 
+            this.firstnameDataGridViewTextBoxColumn.DataPropertyName = "Firstname";
+            this.firstnameDataGridViewTextBoxColumn.HeaderText = "Firstname";
+            this.firstnameDataGridViewTextBoxColumn.Name = "firstnameDataGridViewTextBoxColumn";
+            this.firstnameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // middlenameDataGridViewTextBoxColumn
+            // 
+            this.middlenameDataGridViewTextBoxColumn.DataPropertyName = "Middlename";
+            this.middlenameDataGridViewTextBoxColumn.HeaderText = "Middlename";
+            this.middlenameDataGridViewTextBoxColumn.Name = "middlenameDataGridViewTextBoxColumn";
+            this.middlenameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // ageDataGridViewTextBoxColumn
+            // 
+            this.ageDataGridViewTextBoxColumn.DataPropertyName = "Age";
+            this.ageDataGridViewTextBoxColumn.HeaderText = "Age";
+            this.ageDataGridViewTextBoxColumn.Name = "ageDataGridViewTextBoxColumn";
+            this.ageDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // sexDataGridViewTextBoxColumn
+            // 
+            this.sexDataGridViewTextBoxColumn.DataPropertyName = "Sex";
+            this.sexDataGridViewTextBoxColumn.HeaderText = "Sex";
+            this.sexDataGridViewTextBoxColumn.Name = "sexDataGridViewTextBoxColumn";
+            this.sexDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // addressDataGridViewTextBoxColumn
+            // 
+            this.addressDataGridViewTextBoxColumn.DataPropertyName = "Address";
+            this.addressDataGridViewTextBoxColumn.HeaderText = "Address";
+            this.addressDataGridViewTextBoxColumn.Name = "addressDataGridViewTextBoxColumn";
+            this.addressDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // collegeDataGridViewTextBoxColumn
+            // 
+            this.collegeDataGridViewTextBoxColumn.DataPropertyName = "College";
+            this.collegeDataGridViewTextBoxColumn.HeaderText = "College";
+            this.collegeDataGridViewTextBoxColumn.Name = "collegeDataGridViewTextBoxColumn";
+            this.collegeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // courseDataGridViewTextBoxColumn
+            // 
+            this.courseDataGridViewTextBoxColumn.DataPropertyName = "Course";
+            this.courseDataGridViewTextBoxColumn.HeaderText = "Course";
+            this.courseDataGridViewTextBoxColumn.Name = "courseDataGridViewTextBoxColumn";
+            this.courseDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // yearLevelDataGridViewTextBoxColumn
+            // 
+            this.yearLevelDataGridViewTextBoxColumn.DataPropertyName = "YearLevel";
+            this.yearLevelDataGridViewTextBoxColumn.HeaderText = "YearLevel";
+            this.yearLevelDataGridViewTextBoxColumn.Name = "yearLevelDataGridViewTextBoxColumn";
+            this.yearLevelDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // sectionDataGridViewTextBoxColumn
+            // 
+            this.sectionDataGridViewTextBoxColumn.DataPropertyName = "Section";
+            this.sectionDataGridViewTextBoxColumn.HeaderText = "Section";
+            this.sectionDataGridViewTextBoxColumn.Name = "sectionDataGridViewTextBoxColumn";
+            this.sectionDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // semesterDataGridViewTextBoxColumn
+            // 
+            this.semesterDataGridViewTextBoxColumn.DataPropertyName = "Semester";
+            this.semesterDataGridViewTextBoxColumn.HeaderText = "Semester";
+            this.semesterDataGridViewTextBoxColumn.Name = "semesterDataGridViewTextBoxColumn";
+            this.semesterDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // scholarshipDataGridViewTextBoxColumn
+            // 
+            this.scholarshipDataGridViewTextBoxColumn.DataPropertyName = "Scholarship";
+            this.scholarshipDataGridViewTextBoxColumn.HeaderText = "Scholarship";
+            this.scholarshipDataGridViewTextBoxColumn.Name = "scholarshipDataGridViewTextBoxColumn";
+            this.scholarshipDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumSpringGreen;
             this.ClientSize = new System.Drawing.Size(946, 533);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.Editbutton);
             this.Controls.Add(this.Deletebutton);
             this.Controls.Add(this.Updatebutton);
@@ -423,6 +578,10 @@
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainForm";
+            this.Load += new System.EventHandler(this.MainForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentDbDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentTableBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -462,6 +621,23 @@
         private System.Windows.Forms.Button Updatebutton;
         private System.Windows.Forms.Button Deletebutton;
         private System.Windows.Forms.Button Editbutton;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private StudentDbDataSet studentDbDataSet;
+        private System.Windows.Forms.BindingSource studentTableBindingSource;
+        private StudentDbDataSetTableAdapters.Student_TableTableAdapter student_TableTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lastnameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn firstnameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn middlenameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ageDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sexDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn addressDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn collegeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn courseDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn yearLevelDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sectionDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn semesterDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn scholarshipDataGridViewTextBoxColumn;
 
     }
 }

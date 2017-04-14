@@ -18,6 +18,7 @@ namespace Student_Information_System
             InitializeComponent();
         }
 
+        
         private void button3_Click(object sender, EventArgs e)
         {
 
@@ -68,7 +69,56 @@ namespace Student_Information_System
 
             Savebutton.Enabled = false;
             Addbutton.Enabled = true;
+
+            IDtextBox.Clear();
+            LastnametextBox.Clear();
+            FirstnametextBox.Clear();
+            MiddlenametextBox.Clear();
+            AgetextBox.Clear();
+            SextextBox.Clear();
+            AddresstextBox.Clear();
+            CollegetextBox.Clear();
+            CoursetextBox.Clear();
+            YearLeveltextBox.Clear();
+            SectiontextBox.Clear();
+            SemestertextBox.Clear();
+            ScholarshiptextBox.Clear();
+
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'studentDbDataSet.Student_Table' table. You can move, or remove it, as needed.
+            this.student_TableTableAdapter.Fill(this.studentDbDataSet.Student_Table);
+            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+  
+        }
+        private void dataGridView1_MouseClick(object sender, MouseEventArgs e)
+        {
+            DataGridViewRow dr = dataGridView1.SelectedRows[0];
+            IDtextBox.Text = dr.Cells[0].Value.ToString();
+            // or simply use column name instead of index
+            //dr.Cells["id"].Value.ToString();
+            LastnametextBox.Text = dr.Cells[1].Value.ToString();
+            FirstnametextBox.Text = dr.Cells[2].Value.ToString();
+            MiddlenametextBox.Text = dr.Cells[3].Value.ToString();
+            AgetextBox.Text = dr.Cells[4].Value.ToString();
+            SextextBox.Text = dr.Cells[5].Value.ToString();
+            AddresstextBox.Text = dr.Cells[6].Value.ToString();
+            CollegetextBox.Text = dr.Cells[7].Value.ToString();
+            CoursetextBox.Text = dr.Cells[8].Value.ToString();
+            YearLeveltextBox.Text = dr.Cells[9].Value.ToString();
+            SectiontextBox.Text = dr.Cells[10].Value.ToString();
+            SemestertextBox.Text = dr.Cells[11].Value.ToString();
+            ScholarshiptextBox.Text = dr.Cells[12].Value.ToString();
+       
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
         }
     }
 }
+ 
    
