@@ -62,9 +62,6 @@
             this.Deletebutton = new System.Windows.Forms.Button();
             this.Editbutton = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.studentDbDataSet = new Student_Information_System.StudentDbDataSet();
-            this.studentTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.student_TableTableAdapter = new Student_Information_System.StudentDbDataSetTableAdapters.Student_TableTableAdapter();
             this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lastnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.firstnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -78,9 +75,12 @@
             this.sectionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.semesterDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.scholarshipDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.studentTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.studentDbDataSet = new Student_Information_System.StudentDbDataSet();
+            this.student_TableTableAdapter = new Student_Information_System.StudentDbDataSetTableAdapters.Student_TableTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.studentDbDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentTableBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentDbDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // label3
@@ -377,7 +377,7 @@
             this.Updatebutton.TabIndex = 56;
             this.Updatebutton.Text = "Update";
             this.Updatebutton.UseVisualStyleBackColor = true;
-            this.Updatebutton.Click += new System.EventHandler(this.button3_Click);
+            this.Updatebutton.Click += new System.EventHandler(this.Updatebutton_Click);
             // 
             // Deletebutton
             // 
@@ -400,6 +400,7 @@
             this.Editbutton.TabIndex = 58;
             this.Editbutton.Text = "Edit";
             this.Editbutton.UseVisualStyleBackColor = true;
+            this.Editbutton.Click += new System.EventHandler(this.Editbutton_Click);
             // 
             // dataGridView1
             // 
@@ -428,20 +429,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(832, 204);
             this.dataGridView1.TabIndex = 59;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // studentDbDataSet
-            // 
-            this.studentDbDataSet.DataSetName = "StudentDbDataSet";
-            this.studentDbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // studentTableBindingSource
-            // 
-            this.studentTableBindingSource.DataMember = "Student_Table";
-            this.studentTableBindingSource.DataSource = this.studentDbDataSet;
-            // 
-            // student_TableTableAdapter
-            // 
-            this.student_TableTableAdapter.ClearBeforeFill = true;
             // 
             // iDDataGridViewTextBoxColumn
             // 
@@ -534,6 +521,20 @@
             this.scholarshipDataGridViewTextBoxColumn.Name = "scholarshipDataGridViewTextBoxColumn";
             this.scholarshipDataGridViewTextBoxColumn.ReadOnly = true;
             // 
+            // studentTableBindingSource
+            // 
+            this.studentTableBindingSource.DataMember = "Student_Table";
+            this.studentTableBindingSource.DataSource = this.studentDbDataSet;
+            // 
+            // studentDbDataSet
+            // 
+            this.studentDbDataSet.DataSetName = "StudentDbDataSet";
+            this.studentDbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // student_TableTableAdapter
+            // 
+            this.student_TableTableAdapter.ClearBeforeFill = true;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -580,8 +581,8 @@
             this.Text = "MainForm";
             this.Load += new System.EventHandler(this.MainForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.studentDbDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentTableBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentDbDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

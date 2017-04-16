@@ -19,9 +19,12 @@ namespace Student_Information_System
         }
 
         
-        private void button3_Click(object sender, EventArgs e)
+        private void Updatebutton_Click(object sender, EventArgs e)
         {
-
+            Updatebutton.Enabled = false;
+            Addbutton.Enabled = false;
+            Deletebutton.Enabled = false;
+            Editbutton.Enabled = false;
         }
 
         private void Addbutton_Click(object sender, EventArgs e)
@@ -84,6 +87,19 @@ namespace Student_Information_System
             SemestertextBox.Clear();
             ScholarshiptextBox.Clear();
 
+            IDtextBox.ReadOnly = true;
+            LastnametextBox.ReadOnly = true;
+            FirstnametextBox.ReadOnly = true;
+            MiddlenametextBox.ReadOnly = true;
+            AgetextBox.ReadOnly = true;
+            SextextBox.ReadOnly = true;
+            AddresstextBox.ReadOnly = true;
+            CollegetextBox.ReadOnly = true;
+            CoursetextBox.ReadOnly = true;
+            YearLeveltextBox.ReadOnly = true;
+            SectiontextBox.ReadOnly = true;
+            SemestertextBox.ReadOnly = true;
+            ScholarshiptextBox.ReadOnly = true;
         }
 
         private void MainForm_Load(object sender, EventArgs e)
@@ -117,6 +133,28 @@ namespace Student_Information_System
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             
+        }
+
+        private void Editbutton_Click(object sender, EventArgs e)
+        {
+            IDtextBox.ReadOnly = false;
+            LastnametextBox.ReadOnly = false;
+            FirstnametextBox.ReadOnly = false;
+            MiddlenametextBox.ReadOnly = false;
+            AgetextBox.ReadOnly = false;
+            SextextBox.ReadOnly = false;
+            AddresstextBox.ReadOnly = false;
+            CollegetextBox.ReadOnly = false;
+            CoursetextBox.ReadOnly = false;
+            YearLeveltextBox.ReadOnly = false;
+            SectiontextBox.ReadOnly = false;
+            SemestertextBox.ReadOnly = false;
+            ScholarshiptextBox.ReadOnly = false;
+
+            Editbutton.Enabled = false;
+            Savebutton.Enabled = false;
+            Addbutton.Enabled = false;
+            Deletebutton.Enabled = false;
         }
     }
 }

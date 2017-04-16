@@ -10,6 +10,6 @@ namespace Student_Information_System.UI
     {
 
         void SaveData(StudentInfo StudentInfo);
-
+        void UpdateData(StudentInfo StudentInfo);
     }
 }

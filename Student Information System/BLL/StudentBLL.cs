@@ -14,6 +14,14 @@ namespace Student_Information_System.BLL
         }
 
         public abstract void SaveDataDAL(StudentInfo studentinfo);
-   
+        public abstract void UpdateDataDAL(StudentInfo studentinfo);
+
+
+        internal void UpdateData(StudentInfo studentinfo)
+        {
+            UpdateDataDAL(studentinfo);
+        }
+
+       
     }
 }

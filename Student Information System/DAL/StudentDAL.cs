@@ -44,6 +44,12 @@ namespace Student_Information_System.DAL
                 }
             }
         }
+
+        public override void UpdateDataDAL(StudentInfo studentinfo)
+        {
+        }
+        
     }
 }
+
  

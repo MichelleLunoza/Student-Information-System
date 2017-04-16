@@ -22,5 +22,9 @@ namespace Student_Information_System
             bll.SaveData(studentinfo);
         }
 
+        public void UpdateData(StudentInfo studentinfo)
+        {
+            bll.UpdateData(studentinfo);
+        }
     }
 }
