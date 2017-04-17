@@ -8,3 +8,13 @@ C:\Users\MiGutierrez\Documents\Visual Studio 2012\Projects\Student Information S
 C:\Users\MiGutierrez\Documents\Visual Studio 2012\Projects\Student Information System\Student Information System\bin\Debug\Student Information System.pdb
 C:\Users\MiGutierrez\Documents\Visual Studio 2012\Projects\Student Information System\Student Information System\obj\Debug\Student Information System.exe
 C:\Users\MiGutierrez\Documents\Visual Studio 2012\Projects\Student Information System\Student Information System\obj\Debug\Student Information System.pdb
+C:\Users\MiGutierrez\Desktop\GIT\Student-Information-System\Student Information System\bin\Debug\Student Information System.exe.config
+C:\Users\MiGutierrez\Desktop\GIT\Student-Information-System\Student Information System\obj\Debug\Student Information System.exe
+C:\Users\MiGutierrez\Desktop\GIT\Student-Information-System\Student Information System\obj\Debug\Student Information System.pdb
+C:\Users\MiGutierrez\Desktop\GIT\Student-Information-System\Student Information System\bin\Debug\Student Information System.exe
+C:\Users\MiGutierrez\Desktop\GIT\Student-Information-System\Student Information System\bin\Debug\Student Information System.pdb
+C:\Users\MiGutierrez\Desktop\GIT\Student-Information-System\Student Information System\obj\Debug\Student Information System.csprojResolveAssemblyReference.cache
+C:\Users\MiGutierrez\Desktop\GIT\Student-Information-System\Student Information System\obj\Debug\Student_Information_System.LoginForm.resources
+C:\Users\MiGutierrez\Desktop\GIT\Student-Information-System\Student Information System\obj\Debug\Student_Information_System.Properties.Resources.resources
+C:\Users\MiGutierrez\Desktop\GIT\Student-Information-System\Student Information System\obj\Debug\Student_Information_System.MainForm.resources
+C:\Users\MiGutierrez\Desktop\GIT\Student-Information-System\Student Information System\obj\Debug\Student Information System.csproj.GenerateResource.Cache

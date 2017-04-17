@@ -78,6 +78,7 @@
             this.studentTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.studentDbDataSet = new Student_Information_System.StudentDbDataSet();
             this.student_TableTableAdapter = new Student_Information_System.StudentDbDataSetTableAdapters.Student_TableTableAdapter();
+            this.Clearbutton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentTableBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentDbDataSet)).BeginInit();
@@ -345,7 +346,7 @@
             // 
             this.Addbutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Addbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Addbutton.Location = new System.Drawing.Point(756, 100);
+            this.Addbutton.Location = new System.Drawing.Point(756, 82);
             this.Addbutton.Name = "Addbutton";
             this.Addbutton.Size = new System.Drawing.Size(120, 33);
             this.Addbutton.TabIndex = 54;
@@ -358,7 +359,7 @@
             this.Savebutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Savebutton.Enabled = false;
             this.Savebutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Savebutton.Location = new System.Drawing.Point(756, 139);
+            this.Savebutton.Location = new System.Drawing.Point(756, 121);
             this.Savebutton.Name = "Savebutton";
             this.Savebutton.Size = new System.Drawing.Size(120, 33);
             this.Savebutton.TabIndex = 55;
@@ -371,7 +372,7 @@
             this.Updatebutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Updatebutton.Enabled = false;
             this.Updatebutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Updatebutton.Location = new System.Drawing.Point(756, 213);
+            this.Updatebutton.Location = new System.Drawing.Point(756, 195);
             this.Updatebutton.Name = "Updatebutton";
             this.Updatebutton.Size = new System.Drawing.Size(120, 33);
             this.Updatebutton.TabIndex = 56;
@@ -383,7 +384,7 @@
             // 
             this.Deletebutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Deletebutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Deletebutton.Location = new System.Drawing.Point(756, 252);
+            this.Deletebutton.Location = new System.Drawing.Point(756, 234);
             this.Deletebutton.Name = "Deletebutton";
             this.Deletebutton.Size = new System.Drawing.Size(120, 33);
             this.Deletebutton.TabIndex = 57;
@@ -394,7 +395,7 @@
             // 
             this.Editbutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Editbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Editbutton.Location = new System.Drawing.Point(756, 174);
+            this.Editbutton.Location = new System.Drawing.Point(756, 156);
             this.Editbutton.Name = "Editbutton";
             this.Editbutton.Size = new System.Drawing.Size(120, 33);
             this.Editbutton.TabIndex = 58;
@@ -428,7 +429,7 @@
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(832, 204);
             this.dataGridView1.TabIndex = 59;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // iDDataGridViewTextBoxColumn
             // 
@@ -535,12 +536,25 @@
             // 
             this.student_TableTableAdapter.ClearBeforeFill = true;
             // 
+            // Clearbutton
+            // 
+            this.Clearbutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Clearbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Clearbutton.Location = new System.Drawing.Point(756, 273);
+            this.Clearbutton.Name = "Clearbutton";
+            this.Clearbutton.Size = new System.Drawing.Size(120, 33);
+            this.Clearbutton.TabIndex = 60;
+            this.Clearbutton.Text = "Clear";
+            this.Clearbutton.UseVisualStyleBackColor = true;
+            this.Clearbutton.Click += new System.EventHandler(this.Clearbutton_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumSpringGreen;
             this.ClientSize = new System.Drawing.Size(946, 533);
+            this.Controls.Add(this.Clearbutton);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.Editbutton);
             this.Controls.Add(this.Deletebutton);
@@ -639,6 +653,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn sectionDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn semesterDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn scholarshipDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button Clearbutton;
 
     }
 }
